@@ -14,6 +14,7 @@ class ChannelVC: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //postavljamo sirinu menija
@@ -24,6 +25,6 @@ class ChannelVC: UIViewController {
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
-    
+    @IBAction func prepareForUnwund(segue:UIStoryboardSegue){}
 
 }
