@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 
 class AuthService{
@@ -51,8 +52,44 @@ class AuthService{
         ]
         
         
-        AF.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header , interceptor: nil).responseString { (response) in
+        AF.request(URL_REGISTER, method: .post, parameters: body as Parameters, encoding: JSONEncoding.default, headers: header , interceptor: nil).responseString { (response) in
             if response.error == nil{
+                completion(true)
+            }else{
+                completion(false)
+                debugPrint(response.error as Any)
+            }
+        }
+    }
+    
+    func loginUSer(email:String, password: String, completion: @escaping CompletionHandler){
+        let lowercaseEmail = email.lowercased()
+        let header = HTTPHeaders(["Content-Type":"aplication/json; charset = utf-8"])
+        let body:[String:Any?] = [
+                   "email": lowercaseEmail,
+                   "password": password
+               ]
+        AF.request(URL_REGISTER, method: .post, parameters: body as Parameters, encoding: JSONEncoding.default, headers: header , interceptor: nil).responseJSON { (response) in
+            if response.error == nil{
+//                //prvi nacin low base
+//                if let json = response.value as? Dictionary<String, Any>{
+//                    if let emailR = json["user"] as? String{
+//                        self.userEmail = emailR
+//                    }
+//                    if let token = json["token"] as? String{
+//                        self.authToken = token
+//                    }
+//                }
+                
+                //Using SwiftyJSON
+                guard let data = response.data else {return}
+                do{
+                    let json = try JSON(data:data)
+                    self.userEmail = json["user"].stringValue
+                    self.authToken = json["token"].stringValue
+                }catch{
+                }
+                self.isLoggedIN = true
                 completion(true)
             }else{
                 completion(false)
