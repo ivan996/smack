@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		550DEEE855524F8C2E39618F /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEB26D834DC8AB3692D1E0E /* Pods_Smack.framework */; };
+		BA1DC4AE2455ACBF0053A5D9 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1DC4AD2455ACBF0053A5D9 /* AvatarPickerViewController.swift */; };
+		BA1DC4B02455AE9A0053A5D9 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1DC4AF2455AE9A0053A5D9 /* AvatarCell.swift */; };
+		BA1DC4B22455C0120053A5D9 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1DC4B12455C0120053A5D9 /* CircleImage.swift */; };
 		BA2633B3243B922F0032D998 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2633B2243B922F0032D998 /* GradientView.swift */; };
 		BA2633B6243BA6690032D998 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2633B5243BA6690032D998 /* Constants.swift */; };
 		BA2633B8243BAB390032D998 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2633B7243BAB390032D998 /* LoginVC.swift */; };
@@ -29,6 +32,9 @@
 		5EEB26D834DC8AB3692D1E0E /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		716E438B59D840251C932BD9 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		7B0055F936351FFB77E925B3 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
+		BA1DC4AD2455ACBF0053A5D9 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
+		BA1DC4AF2455AE9A0053A5D9 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		BA1DC4B12455C0120053A5D9 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BA2633B2243B922F0032D998 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BA2633B5243BA6690032D998 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BA2633B7243BAB390032D998 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				BA2633B2243B922F0032D998 /* GradientView.swift */,
 				BA521942244DBD3300BDBE96 /* CreateAccountVC.swift */,
 				BA39D91C2454726400155DDD /* RoundedButton.swift */,
+				BA1DC4AD2455ACBF0053A5D9 /* AvatarPickerViewController.swift */,
+				BA1DC4AF2455AE9A0053A5D9 /* AvatarCell.swift */,
+				BA1DC4B12455C0120053A5D9 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +297,7 @@
 			files = (
 				BA36F4AA2438FD4F00F3938F /* ChatVC.swift in Sources */,
 				BA51C3F12435F7E800BF2E09 /* AppDelegate.swift in Sources */,
+				BA1DC4B02455AE9A0053A5D9 /* AvatarCell.swift in Sources */,
 				BA2633B8243BAB390032D998 /* LoginVC.swift in Sources */,
 				BA2633B3243B922F0032D998 /* GradientView.swift in Sources */,
 				BA51C3F32435F7E800BF2E09 /* SceneDelegate.swift in Sources */,
@@ -297,7 +307,9 @@
 				BA521943244DBD3300BDBE96 /* CreateAccountVC.swift in Sources */,
 				BA2633B6243BA6690032D998 /* Constants.swift in Sources */,
 				BA36F48E2438EDD400F3938F /* SWRevealViewController.m in Sources */,
+				BA1DC4AE2455ACBF0053A5D9 /* AvatarPickerViewController.swift in Sources */,
 				BA36F4AC2438FD5D00F3938F /* ChannelVC.swift in Sources */,
+				BA1DC4B22455C0120053A5D9 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
